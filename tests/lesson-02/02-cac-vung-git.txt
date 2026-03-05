@@ -1,0 +1,10 @@
+
+
+| Git commcand | Local env | Working directory | Staging area | Repository|
+|--------------|-----------|-------------------|--------------|-----------|
+|              | file1, file 2, file 3 | Empty | Empty | Empty |
+| git init | Empty | file1, file 2, file 3 | Empty | Empty |
+| git commit -m "init project" | Empty | file1, file 2, file 3 | Empty | Empty |
+| git add file1 | Empty | file2, file3 | file1 | Empty |
+| git commit -m "add file1" | Empty | file2, file3 | Empty | File1 |
+| git commit -m "add file" | Empty | file2, file3 | Empty | File1 |

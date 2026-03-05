@@ -1,0 +1,6 @@
+# GIT COMMOM COMMANDS EXPLAINATION
+
+- git init:  initialize a new Git repository in a working directory
+- git add <file-name>: only move the selected file from the working directory to the staging area
+- git add .: move all changes/files from working directory to the staging area
+- git commit -m "message": capture a snapshot of the project's staged changes and save them to the repository as a version. All members in the reposiroty can view all changes/commit history
