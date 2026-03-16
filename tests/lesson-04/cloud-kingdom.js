@@ -1,5 +1,5 @@
 let playerName = "Mario";
-let currentLves = 3;
+let currentLives = 3;
 
 const coinLevel1 = 25;
 const coinLevel2 = 30;
