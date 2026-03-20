@@ -1,0 +1,11 @@
+1. Sử dụng xpath tuyệt đối:
+    a. /html/body/div/div/form/input/placeholder[contains(text(), 'Họ và tên')]
+    b. /html/body/div/div/form/button[contains(text(), 'Đăng ký')]
+    c. /html/body/div/div[2]/table/tbody/tr[1]
+
+2. Sử dụng xpath tương đối:
+    a. //input[@placeholder="Số điện thoại"]
+    b. //td[contains(text(), 'Trần Thị Bình')]/following-sibling::td[1]
+    c. //td[contains(text(), 'Lê Hoàng Cường')]/following-sibling::td[2]
+    d. //button[@class="btn-register"]
+    e. //table[@id="resultTable"]
