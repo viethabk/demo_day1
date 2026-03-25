@@ -1,0 +1,191 @@
+# DOM – Relation
+
+## Concepts
+
+- self: current node
+- parent: direct parent node
+- children: direct child nodes
+- ancestor: parent, grandparent, etc.
+- descendant: children, grandchildren, etc.
+- sibling: same level, same parent
+- following: nodes on the right side (excluding children)
+- preceding: nodes on the left side (excluding ancestors)
+- following-sibling: next siblings
+- preceding-sibling: previous siblings
+
+---
+
+# XPath – Advanced Methods
+
+
+## Wildcard
+
+```xpath
+//div
+//*
+```
+
+- `*` matches all elements
+
+---
+
+## child
+
+```xpath
+//form[@id='test-form']/child::button
+```
+
+- Select direct children
+
+---
+
+## descendant
+
+```xpath
+//form[@id='test-form']/descendant::input
+```
+
+- Select all descendants
+
+---
+
+## parent
+
+```xpath
+//button[text()='Create Test Case']/parent::form
+```
+
+- Select parent node
+
+---
+
+## ancestor
+
+```xpath
+//button[@class='btn-edit']/ancestor::table
+```
+
+- Select ancestor nodes
+
+---
+
+## following-sibling
+
+```xpath
+//label[@for='testName']/following-sibling::input
+```
+
+- Select next sibling
+
+---
+
+## preceding-sibling
+
+```xpath
+//button[@class='btn-reset']/preceding-sibling::button
+```
+
+- Select previous sibling
+
+---
+
+## following
+
+```xpath
+//h2[text()='Test Cases List']/following::button[@class='btn-run']
+```
+
+- Select all nodes after current node
+
+---
+
+## preceding
+
+```xpath
+//h2[text()='Test Execution Results']/preceding::td[@class='priority-high']
+```
+
+- Select all nodes before current node
+
+---
+
+## ancestor-or-self
+
+```xpath
+//table[@id='test-table']/ancestor-or-self::span
+```
+
+---
+
+## descendant-or-self
+
+```xpath
+//table[@id='test-table']/descendant-or-self::span
+```
+
+---
+
+# XPath Axes Summary
+
+```xpath
+//tag/relationship::tagname[@attr='value']
+```
+
+Relationships:
+
+- parent
+- child
+- ancestor
+- descendant
+- following
+- preceding
+- following-sibling
+- preceding-sibling
+
+---
+
+# XPath Advanced Syntax
+
+## Attribute
+
+```xpath
+//tag[@attribute='value']
+```
+
+---
+
+## AND / OR
+
+```xpath
+//element[@a='1' and @b='2']
+//element[@a='1' or @b='2']
+```
+
+---
+
+## text()
+
+```xpath
+//element[text()='exact text']
+```
+
+---
+
+## normalize-space()
+
+```xpath
+normalize-space()
+```
+
+- Remove extra spaces
+
+---
+
+## contains()
+
+```xpath
+//element[contains(text(), 'text')]
+//element[contains(@attr, 'value')]
+```
+
+---
